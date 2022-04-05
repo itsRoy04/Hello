@@ -21,15 +21,16 @@ function WhyChoose() {
 
 
                         <ul className="flex flex-col">
-                            <li class="flex gap-2"><i className="fas fa-check"></i> <p>&nbsp;Provides professional service with ease and single
+                            <li className="flex gap-2"><i className="fas fa-check"></i> <p>&nbsp;Provides professional service with ease and single
                                 point of contact.<br /><br /></p>
                             </li>
-                            <li class="flex gap-2"><i className="fas fa-check "></i> <p>&nbsp;Takes complete responsibility from start to
+                            <li className="flex gap-2"><i className="fas fa-check "></i> <p>&nbsp;Takes complete responsibility from start to
                                 end.<br /><br /></p></li>
-                            <li class="flex gap-2"><i className="fas fa-check"></i> <p>&nbsp;Dedicated Relationship Manager in place.<br /><br /></p></li>
+                            <li className="flex gap-2"><i className="fas fa-check"></i> <p>&nbsp;Dedicated Relationship Manager in place.<br /><br /></p></li>
                         </ul>
 
                     </div>
+
                     <div className="">
                         <button type="button" className="bg-black text-white border-black h-10 p-2 md:h-10 lg:h-12"> Consult with and expert
                             now!</button>

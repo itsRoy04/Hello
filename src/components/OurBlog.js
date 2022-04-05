@@ -26,7 +26,7 @@ function OurBlog() {
             </h1>
         </div>
 
-        <div class="text_start">
+        <div className="text_start">
             <h1 className="text-slate-400 lg:pl-40 md:pl-40 pb-3 ">CLOUD PARTNER</h1>
             <div
                 className="flex flex-col lg:flex-row md:flex-col md:pl-48 md:gap-2 md:justify-between lg:space-x-7 lg:justify-around  pb-4">
@@ -38,7 +38,7 @@ function OurBlog() {
 
         </div>
 
-        <div class="text_start">
+        <div className="text_start">
             <h1 className="text-slate-400 lg:pl-40 md:pl-40 pb-4">BLOCKCHAIN PARTNERS</h1>
             <div className="flex lg:flex-row md:flex-row    md:pl-48 pb-20">
                 <img id="partner_img " className="  lg:w-48 md:w-48" src={opartner} alt=""/>

@@ -40,7 +40,7 @@ function About() {
 
                 <div className="">
                     <ul>
-                        <li class="py-2 pt-8">
+                        <li className="py-2 pt-8">
                             <div className="flex ">
                                 <h3 className="hover:cursor-pointer " id="heading_1" onClick={() => setShowText([!showText[0], false, false, false])}>Expert Members </h3>
                                 <span className="flex-row pb-4"  id="span_1"> + </span>
@@ -51,7 +51,7 @@ function About() {
                             {
 
                                 showText[0] &&
-                                <div class="w-auto h-16">
+                                <div className="w-auto h-16">
 
                                     <p id="para_1" className="text-sm ">
                                         Lorem ipsum dolor sit, amet consectetur<br /> adipisicing elit. Vero facere veritatis
@@ -64,7 +64,7 @@ function About() {
 
 
                         </li>
-                        <li  class="py-2">
+                        <li  className="py-2">
                             <div className="flex pt-4 ">
                                 <h3 className="hover:cursor-pointer pb-4" id="heading_2" onClick={() => setShowText([false, !showText[1], false, false])}>Secure & Trsuted
                                 </h3>
@@ -84,7 +84,7 @@ function About() {
                             }
 
                         </li>
-                        <li  class="py-2"> 
+                        <li  className="py-2"> 
                             <div className="flex pt-4">
                                 <h3 className="hover:cursor-pointer " id="heading_3" onClick={() => setShowText([false, false, !showText[2], false])}>Expert Members </h3>
                                 <span className="flex-row " id="span_3"> +</span>
@@ -107,7 +107,7 @@ function About() {
 
                         </li>
 
-                        <li  class="py-2">
+                        <li  className="py-2">
                             <div className="flex pt-4">
                                 <h3 className="hover:cursor-pointer" id="heading_4" onClick={() => setShowText([false, false, false, (!showText[3])])}>Big Resoruces</h3><span
                                     className="flex-row " id="span_4"> +</span>
@@ -144,18 +144,18 @@ function About() {
 
         </div>
 
-        <div class="py-4">
+        <div className="py-4">
 
             <h1 className="text-4xl font-bold ">3.5K</h1>
             <p className="text-slate-400">Projects Done</p>
 
         </div>
 
-        <div class="py-4">
+        <div className="py-4">
             <h1 className="text-4xl font-bold">20million</h1>
             <p className="text-slate-400">Plus pages build</p>
         </div>
-        <div class="py-4">
+        <div className="py-4">
             <h1 className="text-4xl font-bold">3000+</h1>
             <p className="text-slate-400">Device invented</p>
         </div>

@@ -6,7 +6,7 @@ const Banner = (props) => {
         <>
             <div className="flex lg:flex-row md:flex-row items-center flex-col-reverse lg:justify-between  md:justify-between py-10">
                 {/* <!-- Content --> */}
-                <div class="banner_fwd_scroll" >
+                <div className="banner_fwd_scroll" >
                     <h1 className="-rotate-90 text-1xl  text-black">Fb. Tw. Inst.</h1>
                 </div>
                 <div className=" bg-white   ">
@@ -41,7 +41,7 @@ const Banner = (props) => {
 
                 </div>
 
-                <div class="banner_fwd_scroll" >
+                <div className="banner_fwd_scroll" >
                     <h1 className="-rotate-90  display-none lg:display-block text-black pl-8">Scroll </h1>
                 </div>
 
