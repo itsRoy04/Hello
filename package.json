@@ -2,14 +2,14 @@
   "name": "codepartner",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://itsroy04.github.io/Codepartner-React-Vercel/",
-  
+  "homepage": "https://itsroy04.github.io/Codepartner-React-Vercel/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
     "fontawesome": "^5.6.3",
+    "git": "^0.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -22,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "master -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,4 +49,3 @@
     "tailwindcss": "^3.0.23"
   }
 }
-https://github.com/itsRoy04/Codepartner-React-Vercel
