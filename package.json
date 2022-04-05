@@ -2,7 +2,6 @@
   "name": "codepartner",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/itsRoy04.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -21,9 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -b master -d build"
+    "eject": "react-scripts eject"
+  
   },
   "eslintConfig": {
     "extends": [
