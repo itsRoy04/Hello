@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ALL */
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.text_start{
+text-align: start;
+}
+
+
+.items_center{
+  align-items: center;
+}
+.items_start{
+  align-items: start;
+}
+
+/* nav */
+
+
+.nav_links{
+  display: flex;
+  align-items: center;
+  /* min-height: 8vh; */
+  /* background-color: white;
+  padding-top: 3%;
+  padding-left: 8%; */
+}
+/* .toggle {
+  display: block;
+} */
+
+.nav_toggle div{
+  display:none;
+  width: 35px;
+  background-color:rgb(46, 45, 43);
+  padding-top: 0;
+  
+  
+}
+
+.nav_logo{
+  position: static;
+  size: 25vh;
+}
+
+.mnav div{
+  display:none;
+}
+
+.nav_search{
+  display:block;
+}
+
+.nav_banner{
+
+  width:60%;
+  justify-content: center;
+  padding-left: 4em;
+
+
+}
+
+.nav_login{
+  display:block;
+}
+
+@media screen and (max-width:900px){
+
+  .nav_search{
+      display:none
+  }
+
+  .nav_links{
+      font-size: 90%;
+
+  }
+
+}
+
+
+@media screen and (max-width:1000px){
+
+  .nav_search{
+      display:none
+  }
+
+  .nav_links{
+
+      font-size: 90%;
+
+
+  }
+
+}
+
+
+@media screen and (max-width:768px){
+
+  body{
+      overflow-x: hidden;
+  }
+
+  .nav_links ul{
+      display:none;
+  }
+  
+  .nav_links , .nav_search, input {
+      display:none;
+  }
+  .nav_login{
+      display:none;
+  } 
+
+.nav_toggle{
+  text-align: end;
+  padding-left: 8em;
+}
+
+  .nav_logo{
+      position: static;
+  size: 25px;
+  }
+  
+}
+
+
+/* nav */
+
+
+
+
+/* banner */
+
+.banner_heading{
+  /* text-align: start; */
+  padding-top: 2em;
+}
+
+
+.banner_sub_heading{
+  text-align: start;
+}
+
+
+.banner_img{
+  width: 70vh;
+}
+
+
+@media screen and (max-width:768px){
+
+.banner_fwd_scroll{
+  display:none;
+}
+
+
+}
+
+
+/* banner */
+
+
+/* What_we_do */
+
+
+.what_we_text{
+text-align: start;
+}
+
+
+
+
+/* What_we_do */
+
+
+/* About */
+
+.block_iot{
+  width: 65vh;
+  align-items: center;
+}
+
+
+
+
+
+/*  */
+
+
+/* Our Success Story */
+
+.content_box{
+
+   
+width: 40vh;
+background-color: rgb(255, 255, 255);
+opacity: 60%;
+height: 72vh;
+/* z-index: -1; */
+}
+
+
+.grad{
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(80,80,80,1) 0%, rgba(255,255,255,1) 100%, rgb(14, 15, 15) 100%);
+    z-index: -1;
+    opacity: 80;
+}
+
+.grad1{
+    background: rgb(26, 26, 26);
+    opacity: 1;
+    background: linear-gradient(0deg, rgba(17,16,16,1) 0%, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 0%, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(255,255,255,1) 100%, rgba(252,252,252,1) 100%);
+}
+
+
+
+.transit:hover{
+    
+    width:35vh;
+    height:20vh;
+    background-color: rgb(25, 0, 255);
+   transition: translateY(5);
+   transition-delay: 10ms;
+   transition:  1s;
+  
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  
+}
+
+.transit{
+    width:35vh;
+    height:4vh;
+    /* background-color: transparent; */
+    color:white;
+    
+}
+
+@media screen and (max-width:768px){
+
+    .transit{
+        width:10em;
+        height:2em;
+        /* background-color: transparent; */
+        padding:0;
+    
+    }
+
+   
+
+    .transit:hover{
+    
+        width:30vh;
+        height:25vh;
+        background-color: rgb(10, 71, 184);
+       transition: translateY(5);
+       transition-delay: 10ms;
+       transition:  1s;
+       /* opacity: 99%; */
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+      
+    }
+
+}
+
+
+
+.bottom {
+    position:absolute;                 
+    bottom:3.5em;                         
+    left:0;                         
+}
+
+
+.bottom1 {
+    position:absolute;                 
+    bottom:4.3em;   
+                                                  
+}
+
+
+.back{
+    z-index: -1;
+    
+    height: 105%;
+    width: 105%;
+  
+
+
+}
+
+.black_shade{
+    background: rgb(0, 0, 0);
+    opacity: 80;
+background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(20, 20, 20) 0%, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 0%, rgba(255,255,255,1) 84%, rgba(252,252,252,1) 100%);
+
+}
+
+/* Our Success Story */
