@@ -11,22 +11,32 @@ import OurTeam from './components/OurTeam';
 import Testimonials from './components/Testimonials';
 import OurBlog from './components/OurBlog';
 import Footer from './components/Footer';
+import { Routes, Route, Link } from 'react-router-dom';
+import MobileNav from './components/MobileNav';
 
 // import slider from 'react-slick/lib/slider';
 
 function App() {
   return (<div className='App'>
 
-  <Navbar/>
-  <Banner/>
-  <WhatWeDo/>
-  <About/>
-  <Our/>
-  <WhyChoose/>
-  <OurTeam/>
-  <Testimonials/>
-  <OurBlog/>
-  <Footer/>
+{/* <MobileNav/> */}
+    <Navbar  />
+    {/* <Routes>
+      <Route path="/contact" element={<Footer />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/our" element={<Our />} />
+      <Route path="/blog" element={<OurBlog />} />
+    </Routes> */}
+    <Banner />
+    <WhatWeDo />
+    <About />
+    <Our />
+    <WhyChoose />
+    <OurTeam />
+    <Testimonials />
+    <OurBlog />
+    <Footer />
+  
 
   </div>
   );

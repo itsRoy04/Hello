@@ -1,46 +1,81 @@
 import logo from './images/Logo.png';
-
+import { a, Router, Routes, Route } from "react-router-dom";
+import Our from './Our';
+import { useState } from 'react';
+import Mobile from './MobileNav';
 const Navbar = () => {
+
+
+    const [showMenu, setShowMenu] = useState(false);
+    console.log(showMenu);
     return (
         <header>
-            <nav className="flex flex-row lg:flex-row md:flex-row  justify-between lg:justify-around nav  py-4 px-8">
+            {/* <nav className="flex flex-row lg:flex-row md:flex-row  justify-between lg:justify-around nav  py-4 px-8"> */}
+            {/* Hidden Mobile Nav */}
+            <div className={`${setShowMenu ? 'visible' : 'invisible'}`}>
+                <Mobile />
+            </div >
+            {/* Hidden Mobile Nav */}
 
-                <div className="w-12 nav_logo">
-                    <img src={logo} alt="Logo" />
-                </div>
+            <nav className={`  nav  py-4 px-8 ${setShowMenu ? 'invisible lg:visible overflow-hidden' : ' '}`}>
 
-                <div className="px-12 nav_links">
-                    <ul className="gap-4 flex  lg:flex-row md:flex-row py-3 ">
-                        <li><a href="About" className=" font-semibold no-underline hover:underline">About</a></li>
-                        <li><a href="Case Studies" className=" font-semibold no-underline hover:underline">Case Studies</a></li>
-                        <li><a href="Services" className=" font-semibold no-underline hover:underline">Services</a></li>
-                        <li><a href="Blog" className=" font-semibold no-underline hover:underline">Blog</a></li>
-                    </ul>
-                </div>
-                <div className="nav_search px-24 pt-2 ">
-                    <div className="border-b-2 ">
 
-                        <span className="fa fa-search text-slate-300 "></span>
-                        <input type="text" className=" w-28" placeholder="Search Here" />
+                <div className='flex flex-row justify-between lg:justify-around pt-4'>
+                    <div className='w-12 '>
+                        <img className='w-full' src={logo} alt="Logo" />
                     </div>
-                </div>
-                <div className="nav_login py-4 ">
-                    <i className="w-24 fa fa-user "> login</i>
+
+                    <div className=" nav_links">
+
+
+                        <ul className="flex flex-row space-x-4 text-xl  ">
+
+                            <li><  a href="#about" className="font-semibold no-underline hover:underline">About</  a></li>
+
+                            <li><  a href="#our" className="font-semibold no-underline hover:underline">Case Studies</  a></li>
+
+                            <li><  a href="#blog" className="font-semibold no-underline hover:underline">Blog</  a></li>
+
+                            <li><a  a href="#contact" className="font-semibold no-underline hover:underline">Contact</a></li>
+
+                        </ul>
+
+
+
+                    </div>
+                    <div className="nav_search  pt-2 ">
+                        <div className="border-b-2 ">
+
+                            <span className="fa fa-search text-slate-300 "></span>
+                            <input type="text" className="h-8 w-96 pr-8 pl-5 rounded z-0  focus:outline-none" placeholder="Search anything..."/>
+                        </div>
+                    </div>
+                    <div className="flex text-2xl pt-2">
+                        <div className="flex mr-4 ">
+                            <div  >
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                            <div className="ml-2 ">
+                                <p>Login</p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <i className="fa-solid fa-bars" onClick={() => setShowMenu(!showMenu)}></i>
+                        </div>
+                    </div>
 
                 </div>
 
-
-                <div className="nav_toggle p-4">
-                    <i className="fa-solid fa-bars"></i>
-                    <div className="xsline1"></div>
-                    <div className="xsline2"></div>
-                    <div className="xsline3" ></div>
-                </div >
             </nav >
+
+
+
 
         </header >
     )
-} 
+}
 
 
 export default Navbar
